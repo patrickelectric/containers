@@ -10,5 +10,3 @@ jobs:
       - name: Test
         uses: ./linux
         id: test
-        run: |
-          ls
