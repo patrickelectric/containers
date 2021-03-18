@@ -58,7 +58,7 @@ RUN apt update && apt -y --quiet --no-install-recommends install \
 	&& rm -rf /var/lib/apt/lists/{apt,dpkg,cache,log} /tmp/* /var/tmp/*
 
 # Install Qt
-COPY scripts/install-qt.sh /tmp/qt/
+COPY ../scripts/install-qt.sh /tmp/qt/
 RUN /tmp/qt/install-qt.sh
 
 # Reconfigure locale
